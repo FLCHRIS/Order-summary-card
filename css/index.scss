@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$fontRedHatDisplay: 'Red Hat Display', sans-serif;
+
+$PalebBue: hsl(225, 100%, 94%);
+$BrightBlue: hsl(245, 75%, 52%);
+$VeryPaleBlue: hsl(225, 100%, 98%);
+$DesaturatedBlue: hsl(224, 23%, 55%);
+$DarkBlue: hsl(223, 47%, 23%);
+
+html {
+    font-size: 62.5%;
+}
+.main {
+    font-size: 1.5rem;
+    font-family: $fontRedHatDisplay;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $PalebBue;
+    z-index: 10;
+    overflow: hidden;
+    .main__picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
+    .card {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 350px;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 1em;
+        box-shadow: 0px 0px 10px 0px rgba($DarkBlue, .2);
+        z-index: 1;
+        .card__img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .card__title {
+            text-align: center;
+            margin-top: 1em;
+            color: $DarkBlue;
+            font-weight: 900;
+            font-size: 2.7rem;
+        }
+        .card__paragraph {
+            width: 90%;
+            margin: 0 auto 1em;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 1.5rem;
+            color: $DesaturatedBlue;
+        }
+        .card__change {
+            box-sizing: border-box;
+            width: 90%;
+            margin: 0 auto 1.5em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $VeryPaleBlue;
+            padding: .5em 1em;
+            border-radius: 10px;
+            .change__container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1em;
+                p {
+                    margin: 0;
+                }
+                .card__plan {
+                    color: $DarkBlue;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    margin-bottom: .3em;
+                }
+                .card__price {
+                    font-size: 1.4rem;
+                    color: $DesaturatedBlue;
+                }
+            }
+            .card__cta {
+                color: $BrightBlue;
+                font-weight: 700;
+                transition: color .3s;
+                &:hover {
+                    color: rgba($BrightBlue,0.7);
+                }
+            }
+        }
+        .card__button {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            border: none;
+            background-color: $BrightBlue;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0px 10px 5px 0px rgba($BrightBlue,0.2);
+            color: $PalebBue;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color .3s;
+            &:hover {
+                background-color: rgba($BrightBlue,0.7);
+            }
+        }
+        .card__cancel {
+            display: block;
+            width: 90%;
+            margin: 1.5em auto 2em;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: $DesaturatedBlue;
+            font-weight: 700;
+            transition: color .3s, font-weight .1s;
+            cursor: pointer;
+            &:hover {
+                color: $DarkBlue;
+                font-weight: 900;
+            }
+        }
+    }
+    .main__attribution {
+        position: absolute;
+        right: 1em;
+        bottom: 1em;
+        text-align: end;
+        line-height: 1.5;
+        font-size: 1.3rem;
+        color: $DarkBlue;
+        a {
+            color: $BrightBlue;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}

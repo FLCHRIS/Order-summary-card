@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  font-size: 1.5rem;
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: hsl(225deg, 100%, 94%);
+  z-index: 10;
+  overflow: hidden;
+}
+.main .main__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+}
+.main .card {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 350px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 1em;
+  box-shadow: 0px 0px 10px 0px rgba(31, 47, 86, 0.2);
+  z-index: 1;
+}
+.main .card .card__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .card .card__title {
+  text-align: center;
+  margin-top: 1em;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  font-size: 2.7rem;
+}
+.main .card .card__paragraph {
+  width: 90%;
+  margin: 0 auto 1em;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: hsl(224deg, 23%, 55%);
+}
+.main .card .card__change {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+.main .card .card__change .change__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.main .card .card__change .change__container p {
+  margin: 0;
+}
+.main .card .card__change .change__container .card__plan {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+.main .card .card__change .change__container .card__price {
+  font-size: 1.4rem;
+  color: hsl(224deg, 23%, 55%);
+}
+.main .card .card__change .card__cta {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.main .card .card__change .card__cta:hover {
+  color: rgba(56, 41, 224, 0.7);
+}
+.main .card .card__button {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: none;
+  background-color: hsl(245deg, 75%, 52%);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 10px 5px 0px rgba(56, 41, 224, 0.2);
+  color: hsl(225deg, 100%, 94%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.main .card .card__button:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+}
+.main .card .card__cancel {
+  display: block;
+  width: 90%;
+  margin: 1.5em auto 2em;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 700;
+  transition: color 0.3s, font-weight 0.1s;
+  cursor: pointer;
+}
+.main .card .card__cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+.main .main__attribution {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  text-align: end;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  color: hsl(223deg, 47%, 23%);
+}
+.main .main__attribution a {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */
